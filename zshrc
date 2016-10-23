@@ -83,8 +83,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias workspace="$HOME/workspace/nu/"
-alias runtests="lein midje && lein postman"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-. ~/.nurc
