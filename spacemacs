@@ -285,6 +285,11 @@ you should place your code here."
 
   (add-hook 'after-init-hook 'global-company-mode)
 
+  ;; SHELL HOOKS
+  (defun shell-hook ()
+    (text-scale-decrease 1.8))
+  (add-hook 'term-mode-hook 'shell-hook)
+  
   ;; CIDER
   (setq cljr-warn-on-eval nil)
   (setq clojure-enable-fancify-symbols t)
