@@ -52,6 +52,7 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
                                       cider
+                                      dired+
                                       docker
                                       dockerfile-mode
                                       ensime
