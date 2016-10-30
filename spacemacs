@@ -28,7 +28,6 @@ values."
      clojure
      elixir
      emacs-lisp
-     eyebrowse
      git
      github
      markdown
@@ -56,6 +55,7 @@ values."
                                       docker
                                       dockerfile-mode
                                       ensime
+                                      eyebrowse
                                       fancy-battery
                                       json-mode
                                       midje-mode
@@ -273,11 +273,6 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
   ;; GENERAL
-  (setq savehist-additional-variables
-        '(kill-ring search-ring regexp-search-ring)
-        savehist-file "~/.emacs.d/savehist")
-  (savehist-mode t)
-
   (add-to-list 'magic-mode-alist '("{" . json-mode))
   (setq multi-term-program "/bin/zsh")
   (setq powerline-default-separator 'bar)
@@ -295,7 +290,7 @@ you should place your code here."
   (setq clojure-enable-fancify-symbols t)
   (setq cljr-favor-prefix-notation nil)
   (setq cider-repl-wrap-history t)
-  (setq cider-repl-history-size 1000)
+  (setq cider-repl-history-size 2000)
   (setq cider-repl-history-file "~/.nrepl_history")
 
   ;; MIDJE
@@ -315,8 +310,7 @@ you should place your code here."
   (setenv "DOCKER_TLS_VERIFY" "1")
   (setenv "DOCKER_HOST" "192.168.99.100:2376")
   (setenv "DOCKER_CERT_PATH" "/Users/leorog/.docker/machine/machines/default")
-  (setenv "DOCKER_MACHINE_NAME" "default")
-  )
+  (setenv "DOCKER_MACHINE_NAME" "default"))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
