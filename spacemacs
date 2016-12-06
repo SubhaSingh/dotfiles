@@ -127,7 +127,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 16
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -302,15 +302,7 @@ you should place your code here."
   (add-hook 'lisp-mode-hook             'enable-paredit-mode)
   (add-hook 'clojure-mode-hook          'enable-paredit-mode)
   (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
-  (add-hook 'scheme-mode-hook           'enable-paredit-mode)
-
-  ;; DOCKER
-  (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
-  (setq exec-path (append exec-path '("/usr/local/bin")))
-  (setenv "DOCKER_TLS_VERIFY" "1")
-  (setenv "DOCKER_HOST" "192.168.99.100:2376")
-  (setenv "DOCKER_CERT_PATH" "/Users/leorog/.docker/machine/machines/default")
-  (setenv "DOCKER_MACHINE_NAME" "default"))
+  (add-hook 'scheme-mode-hook           'enable-paredit-mode))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
