@@ -1,6 +1,5 @@
 - defaults:
     link:
-      force: true
       create: true
       relink: true
 
@@ -8,9 +7,6 @@
 
 - link:
    ~/.dotfiles: ''
-    ~/.spacemacs: spacemacs 
-      path: spacemacs 
-    ~/.zshrc: zshrc 
-      path: zshrc
+   ~/.spacemacs: spacemacs 
 
 - shell: []
