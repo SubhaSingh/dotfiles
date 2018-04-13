@@ -7,6 +7,9 @@
 
 - link:
    ~/.dotfiles: ''
-   ~/.spacemacs: spacemacs 
+   ~/.spacemacs: spacemacs
+   ~/.i3/config: i3
+   ~/.i3blocks.conf: i3blocks
+   ~/.config/rofi: rofi
 
 - shell: []
