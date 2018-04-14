@@ -12,7 +12,7 @@ bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
-font xft:System San Francisco Display 9
+font xft:Source Code Pro 10
 
 floating_modifier $mod
 
